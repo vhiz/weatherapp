@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const weatherRoutes = require('./routes/weather')
+const path = require('path')
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.use('/weather',weatherRoutes )
@@ -17,7 +18,7 @@ app.get("/", function(req, res) {
 
 
 app.get('*', (req, res) => {
-    res.send('Page not found')
+    res.sendFile(__dirname+ "/views/404.html")
 })
 const Port = 3000
 
