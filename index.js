@@ -20,7 +20,7 @@ app.get("/", function(req, res) {
 app.get('*', (req, res) => {
     res.sendFile(__dirname+ "/views/404.html")
 })
-var Port = process.env.Port || 3000
+var Port = process.env.PORT || 3000
 
 app.listen(Port, () => {
     console.log(`${Port}`)
