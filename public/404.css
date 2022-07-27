@@ -1,42 +1,49 @@
-/*======================
-    404 page
-=======================*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 
-
-.page_404 {
-    padding: 40px 0;
-    background: hwb(0 100% 0%);
-    font-family: 'Arvo', serif;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #09334f;
+	position: relative;
 }
-
-.page_404 img {
-    width: 100%;
+#yetiSVG {
+	width: 600px;
+	height: 470px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
-
-.four_zero_four_bg {
-
-    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
-    background-position: center;
+#lightSVG {
+	width: 600px;
+	height: 470px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
 }
-
-
-.four_zero_four_bg h1 {
-    font-size: 80px;
-}
-
-.four_zero_four_bg h3 {
-    font-size: 80px;
-}
-
-.link_404 {
-    color: hwb(0 100% 0%) !important;
-    padding: 10px 20px;
-    background: hwb(116 19% 33%);
-    margin: 20px 0;
-    display: inline-block;
-}
-
-.contant_box_404 {
-    margin-top: -50px;
+.content {
+	padding: 5rem 3rem 0 25rem;
+	position: relative;
+	z-index: 10;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #fff;
+	h3 {
+		margin: 0 0 0.8rem;
+		font-size: 2.625rem;
+		font-weight: 900;
+		line-height: 120%;
+	}
+	p {
+		font-size: 1.25rem;
+		font-weight: normal;
+		line-height: 150%;
+		color: #d1e2ed;
+		span {
+			text-decoration: line-through;
+		}
+	}
 }
